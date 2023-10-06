@@ -37,8 +37,30 @@ namespace w01 //packace, library, coverage code and object location
             #endregion
 
             #region Pointer Types - not used so much
+            unsafe
+            {
+                 int* p1 = &b;
+            }
 
-            int* p1 = &b;
+
+            #endregion
+
+            #region Reference Types
+
+            #region Predefined Types
+
+            string name = "Aydın Seçer";
+            object anyData = new MyData();
+
+
+            #endregion
+
+            #region User Defined Types
+            //classes and user defined everything
+            //class Program{}=>  user defined reference type
+            //see example 2
+
+            #endregion
 
 
             #endregion
@@ -47,7 +69,17 @@ namespace w01 //packace, library, coverage code and object location
         }
     }
 
+    //Example 2
+    class Student
+    {
+        private int no;
+        private string name;
 
+        void ShowName()
+        {
+            //....
+        }
+    }
 
     //Example 1: User Defined Complex Primitive types/value types
     struct MyData

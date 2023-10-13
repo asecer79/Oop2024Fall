@@ -210,11 +210,55 @@ namespace w02
 
 
 
-            //arrays
+            //arrays/ reference type
 
-            char[] name = { 'a', 'y', 'd', 'ı', 'n' };
-
+            char[] name = { 'a', 'y', 'd', 'ı', 'n' }; //reference type
             Console.WriteLine(name);
+            string name2 = "aydın";      //reference type
+
+
+            int[] numbers = { 1, 2, 3, 4, 5, 6 };
+            int[,] numbers2 = { { 1,2, 3, 4,5, 6 }, { 1, 2, 3, 4, 5, 6 } };
+            int[,,] numbers3 =new int[2,2,2];
+            numbers3[0, 0, 0] = 3;
+
+            //object array
+            Program[] objectList = new Program[3];
+            objectList[0] = new Program();
+
+
+
+
+            //null types
+
+            //as a default, value types cannot be null
+           // int b = null; err
+            //but we can make they nullable with a special operator
+            int? c = null;
+
+            //ref types can be null
+            int[] list = null;
+
+            //string is ref type and it can be null
+            string name3 = null;
+
+            Program p = null;
+
+
+            //default or initial values
+            int x; //x = 0
+            //Console.WriteLine(x); //err
+
+            string name4; //x = null;
+            //Console.WriteLine(name4); //err
+
+
+
+            int? x2 = null;
+
+
+
+
 
 
 

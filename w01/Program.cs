@@ -13,8 +13,6 @@ namespace w01 //packace, library, coverage code and object location
             int b = 1 + 3;
             Console.WriteLine("Hello world!!!");//printf in c
 
-
-
             #region Data Types
 
             #region Value Types /Primitive Types

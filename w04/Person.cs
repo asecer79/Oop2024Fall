@@ -15,9 +15,15 @@ namespace w04
         #region A-Static Members
 
         //...
-
+        //static fields
         public static int count = 0;//static members cannot be reached from instances/object
         //can only be reached from class name
+
+        //static method
+        public static void WhatIsCount()
+        {
+            Console.WriteLine(count);
+        }
 
         #endregion
 

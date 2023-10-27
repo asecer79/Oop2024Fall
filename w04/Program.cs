@@ -42,11 +42,32 @@
             Console.WriteLine(person4["age"]);//getter
 
 
+            Person.WhatIsCount();
+
+
             //Console.WriteLine(person.count);
             //Console.WriteLine(person1.count);
             //Console.WriteLine(person2.count);
             //Console.WriteLine(person3.count);
             //Console.WriteLine(person4.count);
+
+
+
+            //object initialization/creating options
+            Person personX1=new Person();//standard init
+            personX1.Age = 25;
+            Person personX2 = new Person("Ayşe");//overloaded standard init
+
+            //new type object initializer
+            var personX3 = new Person
+            {
+                Age = 25,
+                LastName = "Seçer",
+            };
+
+
+
+            personX3.setName("aydın"); 
 
 
         }

@@ -42,7 +42,6 @@ namespace w05
     //classes,Interfaces, structs and enums may be internal, public and without keyword
     public class A
     {
-
         public A()
         {
             //private
@@ -65,7 +64,6 @@ namespace w05
             x5 = 5; //within class itself it is reachable
             m5();//within class itself, it is reachable
         }
-
 
         #region without keywords
         //int x1 = 1;//without keywords

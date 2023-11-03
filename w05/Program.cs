@@ -1,11 +1,10 @@
-﻿
-//inside/same assembly/
+﻿//inside/same assembly/
 namespace w05
 {
     //...
     class Program//same assembly and different/other class
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             A a1 = new A();
 
@@ -40,6 +39,7 @@ namespace w05
 
     //without keywords => behave like private, sometime behave like internal
 
+    //classes,Interfaces, structs and enums may be internal, public and without keyword
     public class A
     {
 
@@ -79,7 +79,7 @@ namespace w05
         public int x2 = 1;//public keywords
         public void m2()//public keywords
         {
-        
+
         }
 
         #endregion
@@ -97,7 +97,7 @@ namespace w05
         protected int x3 = 1;
         protected void m3()
         {
-           
+
         }
 
         #endregion
@@ -126,15 +126,15 @@ namespace w05
         public B()
         {
             //public members of A class are reachable
-             x2 = 1; 
-             m2();
+            x2 = 1;
+            m2();
 
             //private members of A class are not reachable
             //x1 = 1; err
             //mb1(); err
 
-           // protected members of A class are reachable
-            x3 = 1; 
+            // protected members of A class are reachable
+            x3 = 1;
             m3();
 
             //internal members of A class are reachable
@@ -149,9 +149,6 @@ namespace w05
         private int b1 = 1;
         private void mb1(int x) { }
     }
-
- 
-
 }
 
 ////another namespace/assembly

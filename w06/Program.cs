@@ -3,6 +3,8 @@ using System.Diagnostics;
 using w06.AnimalOperations.Abstract;
 using w06.AnimalOperations.Concrete;
 using w06.Business;
+using w06.Calculation2.Abstract;
+using w06.Calculation2.Concrete;
 using w06.Logging.Abstract;
 using w06.Logging.Concrete;
 using w06.SecurityOperations.Concrete;
@@ -47,8 +49,26 @@ namespace w06
             */
 
 
+            //abstract classes can not be object, or cannot me instantiated, cannot be created by new keyword,
+            //they can only be inherited...
+            //BasicMathOperation basicMath = new BasicMathOperation();
+            /*
+            SimpleMathOperations simpleMathOperations = new SimpleMathOperations();//ok
+            BasicMathOperation simpleMathOperations2 = new SimpleMathOperations();//ok
+            //simpleMathOperations.
+            */
 
 
+            //polymorphism 
+            List<A> list = new List<A>();
+            list.Add(new A());
+            list.Add(new B());
+            list.Add(new C());
+
+            foreach (var item in list)
+            {
+                item.m1();
+            }
 
 
         }

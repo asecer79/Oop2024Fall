@@ -9,5 +9,6 @@ namespace w06.Calculation.Abstract
     //multiple interface inheritance
     internal interface IAllInOneMath:IBasicMath,IAdvancedMath,ITrigonometry
     {
+        
     }
 }

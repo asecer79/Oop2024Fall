@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "w05", "w05\w05.csproj", "{7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAssembly", "TestAssembly\TestAssembly.csproj", "{84EF8F4B-DC74-4AD3-BCF8-C415855FB119}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "w06", "w06\w06.csproj", "{841A044C-949C-4C2B-8D46-C5424822503D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "w06", "w06\w06.csproj", "{841A044C-949C-4C2B-8D46-C5424822503D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "w07", "w07\w07.csproj", "{873899EF-7742-4F5B-80EB-95CF7A75CD9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{841A044C-949C-4C2B-8D46-C5424822503D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{841A044C-949C-4C2B-8D46-C5424822503D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{841A044C-949C-4C2B-8D46-C5424822503D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{873899EF-7742-4F5B-80EB-95CF7A75CD9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873899EF-7742-4F5B-80EB-95CF7A75CD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873899EF-7742-4F5B-80EB-95CF7A75CD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873899EF-7742-4F5B-80EB-95CF7A75CD9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

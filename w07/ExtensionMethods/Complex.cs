@@ -6,6 +6,16 @@ using System.Threading.Tasks;
 
 namespace w07.ExtensionMethods
 {
+    enum MyEnum
+    {
+
+    }
+
+    interface IInterface
+    {
+
+    }
+
     public class Complex
     {
         public Complex(double x, double y)

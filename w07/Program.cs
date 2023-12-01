@@ -90,7 +90,7 @@ namespace w07
             Console.WriteLine(A == B);
 
             //overloading cast operator
-            // Complex C = (Complex)("number operaror imaginary");
+            // Complex C = (Complex)("number operator imaginary");
 
             //explicit conversion
             Complex fromString = (Complex)"(1,2)"; // = 1 + 5i ;

@@ -12,9 +12,9 @@ namespace w09
         List<T> list = new List<T>();
         public IEnumerator<T> GetEnumerator()
         {
-            foreach (var toy in this.list)
+            foreach (var item in this.list)
             {
-                yield return toy;
+                yield return item;
             }
         }
 

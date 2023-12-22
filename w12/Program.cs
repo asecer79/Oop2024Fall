@@ -22,9 +22,9 @@ namespace w12
             //BankAccountNotThreadSafe account = new BankAccountNotThreadSafe(1000, "TR161561651616516516156");
             //BankAccountByLock account = new BankAccountByLock(1000,"TR161561651616516516156");
             //BankAccountByMutex account = new BankAccountByMutex(1000, "TR161561651616516516156");
-           // BankAccountBySemaphore account = new BankAccountBySemaphore(1000, "TR161561651616516516156");
+            // BankAccountBySemaphore account = new BankAccountBySemaphore(1000, "TR161561651616516516156");
 
-           // Console.WriteLine($"Initial balance: {account.GetBalance()} TL");
+            // Console.WriteLine($"Initial balance: {account.GetBalance()} TL");
 
             //for (int i = 0; i < 100; i++) //transaction amount
             //{
@@ -49,49 +49,53 @@ namespace w12
 
 
 
-           
-
-          //var task1= Task.Run(() =>
-          //  {
-          //      for (int i = 0; i < 100; i++)
-          //      {
-          //          Thread.Sleep(20);
-          //          Console.WriteLine("Task1");
-          //      }
-          //  });
 
 
-          //  var task2 = Task.Run(() =>
-          //  {
-          //      for (int i = 0; i < 100; i++)
-          //      {
-          //          Task.Delay(10);
-          //          Console.WriteLine("Task2");
-          //      }
-          //  });
+            //var task1= Task.Run(() =>
+            //  {
+            //      for (int i = 0; i < 100; i++)
+            //      {
+            //          Thread.Sleep(20);
+            //          Console.WriteLine("Task1");
+            //      }
+            //  });
 
 
-          //  Task.WaitAll(task2, task1);
+            //  var task2 = Task.Run(() =>
+            //  {
+            //      for (int i = 0; i < 100; i++)
+            //      {
+            //          Task.Delay(10);
+            //          Console.WriteLine("Task2");
+            //      }
+            //  });
 
 
+            //  Task.WaitAll(task2, task1);
+
+            //SEQUENTIAL
           Parallel.For(1, 100, i =>
           {
+              //parallel 
               //....  each line of this scope executed as parallel.
               Task1(i);
               Task2(i);
 
           });
+          //SEQUENTIAL
 
-            Console.WriteLine("Finished");
 
-          //  Console.ReadLine();
+
+          Console.WriteLine("Finished");
+
+            //  Console.ReadLine();
 
         }
 
         static void Task1(int i)
         {
             Thread.Sleep(100);
-            Console.WriteLine("Task1 "+i);
+            Console.WriteLine("Task1 " + i);
         }
 
         static void Task2(int i)

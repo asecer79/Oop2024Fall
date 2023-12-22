@@ -22,7 +22,7 @@ namespace w12
             //BankAccountNotThreadSafe account = new BankAccountNotThreadSafe(1000, "TR161561651616516516156");
             //BankAccountByLock account = new BankAccountByLock(1000,"TR161561651616516516156");
             //BankAccountByMutex account = new BankAccountByMutex(1000, "TR161561651616516516156");
-            // BankAccountBySemaphore account = new BankAccountBySemaphore(1000, "TR161561651616516516156");
+            //BankAccountBySemaphore account = new BankAccountBySemaphore(1000, "TR161561651616516516156");
 
             // Console.WriteLine($"Initial balance: {account.GetBalance()} TL");
 

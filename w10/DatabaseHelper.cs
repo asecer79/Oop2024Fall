@@ -22,6 +22,7 @@ namespace w10
         Event Unsubscription: Event handlers can be unsubscribed using the -= operator.
     */
 
+    //for the communication processes between objects, in OOP, event mechanism are used
     public class DatabaseHelper
     {
         //Step 1
